@@ -1,4 +1,4 @@
-from deposito_strumenti import DepositoStrumenti
+from deposito_strumenti import DepositoStrumenti, Strumento
 from datetime import datetime
 
 def menu():
@@ -42,7 +42,6 @@ def main():
                 continue
             strumento = deposito.aggiungi_strumento(tipo, marca, anno_acquisto, valore)
             print(f"Strumento aggiunto: {strumento}")
-
         elif scelta == "4":
             strumenti_ordinati = deposito.strumenti_ordinati_per_marca()
             for s in strumenti_ordinati:
