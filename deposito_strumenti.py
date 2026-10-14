@@ -85,9 +85,10 @@ class DepositoStrumenti:
                 prestito = Prestito( id_prestito= f'P{scatola + 1}', data = data,id_strumento= id_strumento , cognome_allievo = cognome_allievo )
                 self.lista_prestiti.append(prestito)
 
-            for i in range (len(self.lista_prestiti)):
+            '''for i in range (len(self.lista_prestiti)):
                 print(self.lista_prestiti[i].id_prestito, self.lista_prestiti[i].data,
                       self.lista_prestiti[i].id_strumento, self.lista_prestiti[i].cognome_allievo)
+            '''
 
             return prestito
         else:
